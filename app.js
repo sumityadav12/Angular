@@ -1,11 +1,13 @@
 (function(){
 'use strict';
 
-angular.module('myFirstApp',[])
+var app = angular.module('myFirstApp', [])
 
-.controller('myFirstController', function(){
+app.controller('myFirstController', function($scope){
 
+$scope.name = "test";
+$scope.test = "testscope";
 
 });
 
-})()
+})();
